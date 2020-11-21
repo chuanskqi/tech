@@ -5,7 +5,7 @@ import com.isharefox.account.dto.AccountDto;
 import com.isharefox.account.dto.GenericAccountResponse;
 import com.isharefox.common.validation.PhoneNumber;
 import com.isharefox.repo.entity.Account;
-import com.isharefox.service.IAccountService;
+import com.isharefox.service.account.IAccountService;
 import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;

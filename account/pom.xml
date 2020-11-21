@@ -9,14 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>web</artifactId>
-    <packaging>jar</packaging>
-
+    <artifactId>account</artifactId>
+    
     <dependencies>
-
         <dependency>
             <groupId>com.isharefox</groupId>
-            <artifactId>account</artifactId>
+            <artifactId>repo</artifactId>
         </dependency>
     </dependencies>
+
 </project>
