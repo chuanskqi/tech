@@ -9,6 +9,7 @@
         <module>repo</module>
         <module>service</module>
         <module>account</module>
+        <module>pay</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -84,6 +85,11 @@
             <dependency>
                 <groupId>com.isharefox</groupId>
                 <artifactId>account</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.isharefox</groupId>
+                <artifactId>pay</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>

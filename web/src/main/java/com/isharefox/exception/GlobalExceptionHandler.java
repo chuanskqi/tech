@@ -1,6 +1,7 @@
 package com.isharefox.exception;
 import com.isharefox.common.api.BaseResponse;
 import com.isharefox.common.api.ResultCode;
+import com.isharefox.common.exception.ServiceException;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.validator.internal.engine.path.PathImpl;
 import org.springframework.http.converter.HttpMessageNotReadableException;

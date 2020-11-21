@@ -14,7 +14,7 @@ public class HeartBeatController {
     final IAccountService accountService;
     @GetMapping("/heartbeat")
     public String say() {
-        return "200";
+        return "xyssss11啊啊啊";
     }
 
     @GetMapping("/datasouce")

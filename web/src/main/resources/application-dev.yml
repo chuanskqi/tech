@@ -7,14 +7,6 @@ spring:
     url: jdbc:mysql://116.196.91.182:13306/tff?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
     username: root
     password: admin@tff
-#  mvc:
-#    static-path-pattern: /static/**
-  resources:
-    cache:
-      period: 0
-#  thymeleaf:
-#    cache: false #关闭缓存
-#    prefix: classpath:/templates/ #调整页面路径
 
 logging:
   group:

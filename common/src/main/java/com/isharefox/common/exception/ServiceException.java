@@ -1,4 +1,4 @@
-package com.isharefox.exception;
+package com.isharefox.common.exception;
 
 import com.isharefox.common.api.ResultCode;
 import lombok.Getter;

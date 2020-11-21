@@ -32,6 +32,10 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.isharefox</groupId>
@@ -40,6 +44,11 @@
         <dependency>
             <groupId>com.isharefox</groupId>
             <artifactId>account</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.isharefox</groupId>
+            <artifactId>pay</artifactId>
         </dependency>
     </dependencies>
 
@@ -52,6 +61,11 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>com.isharefox.IshareFoxApplication</mainClass>
+                    <!--热部署
+                    https://docs.spring.io/spring-boot/docs/2.4.0/reference/html/using-spring-boot.html#using-boot-devtools-restart
+                    -->
+                    <fork>true</fork>
+                    <addResources>true</addResources>
                 </configuration>
                 <executions>
                     <execution>
