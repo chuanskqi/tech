@@ -1,10 +1,10 @@
-package com.tff.common.utils.qrcode;
+package com.isharefox.common.qrcode;
 
-import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.common.BitMatrix;
+import org.springframework.util.StringUtils;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -68,7 +68,7 @@ public class QRSimpleGenUtils {
         Hashtable hints = new Hashtable();
         hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
         BitMatrix bitMatrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, width, height, hints);
-        if (StringUtils.isNotBlank(path)) {
+        if (StringUtils.hasLength(path)) {
             if (!path.endsWith("/")) {
                 path = path + "/";
             }

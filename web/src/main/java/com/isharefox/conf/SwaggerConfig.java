@@ -5,6 +5,7 @@ import com.google.common.base.Optional;
 import com.google.common.base.Predicate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.RequestHandler;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -31,7 +32,7 @@ public class SwaggerConfig {
      * 以下包会被swagger探测，生成api
      */
     private static final String CONTROLLER_PACKAGE =
-            "com.tff.account.controller" + PACKAGE_SPLIT +
+            "com.isharefox" + PACKAGE_SPLIT +
             "com.tff.test";
 
 

@@ -1,4 +1,4 @@
-package com.tff.common.validation;
+package com.isharefox.common.validation;
 
 import javax.validation.Constraint;
 import java.lang.annotation.*;

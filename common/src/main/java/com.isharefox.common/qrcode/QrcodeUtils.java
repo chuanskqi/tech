@@ -1,4 +1,4 @@
-package com.tff.common.utils.qrcode;
+package com.isharefox.common.qrcode;
 
 import com.google.common.base.Charsets;
 import com.google.common.collect.Maps;

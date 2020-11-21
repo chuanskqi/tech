@@ -1,4 +1,4 @@
-package com.tff.common.utils.qrcode;
+package com.isharefox.common.qrcode;
 
 import com.google.zxing.common.BitMatrix;
 

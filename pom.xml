@@ -5,7 +5,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>common</module>
-        <module>config</module>
+        <module>web</module>
+        <module>repo</module>
+        <module>service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -66,10 +68,32 @@
             </dependency>
             <!--mybatis-plus end-->
 
+
+            <!--sub moudule-->
+            <dependency>
+                <groupId>com.isharefox</groupId>
+                <artifactId>common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.isharefox</groupId>
+                <artifactId>repo</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.isharefox</groupId>
+                <artifactId>service</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>com.isharefox</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
