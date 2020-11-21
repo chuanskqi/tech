@@ -7,7 +7,6 @@ import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import org.apache.ibatis.jdbc.ScriptRunner;
-import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.InputStream;
@@ -20,7 +19,6 @@ public class GeneratorTool {
     public static void main(String[] args) throws Exception{
         new GeneratorTool().mySql();
     }
-    @Test
     public void mySql() throws SQLException {
         AutoGenerator auto = new AutoGenerator();
         auto.setDataSource(mysqlDataSourceConfig())    //数据库配置

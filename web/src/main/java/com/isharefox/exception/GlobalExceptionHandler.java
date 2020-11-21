@@ -1,4 +1,4 @@
-package com.isharefox.common.exception;
+package com.isharefox.exception;
 import com.isharefox.common.api.BaseResponse;
 import com.isharefox.common.api.ResultCode;
 import lombok.extern.slf4j.Slf4j;
@@ -128,7 +128,7 @@ public class GlobalExceptionHandler {
                 .build();
     }
 
-    @ExceptionHandler(com.isharefox.common.exception.ServiceException.class)
+    @ExceptionHandler(ServiceException.class)
     public BaseResponse handleError(ServiceException e) {
         log.error("Service Exception", e);
         return BaseResponse

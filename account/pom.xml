@@ -10,11 +10,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>account</artifactId>
-    
+
     <dependencies>
         <dependency>
             <groupId>com.isharefox</groupId>
             <artifactId>repo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.isharefox</groupId>
+            <artifactId>common</artifactId>
         </dependency>
     </dependencies>
 
