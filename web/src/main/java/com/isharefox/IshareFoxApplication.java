@@ -4,7 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@MapperScan("com.isharefox.repo.mapper")
+@MapperScan("com.isharefox.*.mapper")
 @SpringBootApplication
 public class IshareFoxApplication {
 	public static void main(String[] args) {

@@ -1,0 +1,10 @@
+com\isharefox\common\api\BaseResponse$BaseResponseBuilder.class
+com\isharefox\common\validation\PhoneNumber.class
+com\isharefox\common\api\BaseResponse.class
+com\isharefox\common\qrcode\MatrixToLogoImageConfig.class
+com\isharefox\common\qrcode\QRSimpleGenUtils.class
+com\isharefox\common\qrcode\QrcodeUtils.class
+com\isharefox\common\validation\PhoneNumberValidator.class
+com\isharefox\common\api\ResultCode.class
+com\isharefox\common\qrcode\MatrixToImageWriter.class
+com\isharefox\common\qrcode\BufferedImageLuminanceSource.class

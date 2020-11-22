@@ -60,7 +60,7 @@ public class GeneratorTool {
      */
     private DataSourceConfig mysqlDataSourceConfig() {
         DataSourceConfig dataSourceConfig = new DataSourceConfig()
-                .setUrl("jdbc:mysql://localhost:3306/tff?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8")
+                .setUrl("jdbc:mysql://localhost:3306/isharefox?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8")
                 .setUsername("root")
                 .setPassword("root")
                 .setDriverName(com.mysql.cj.jdbc.Driver.class.getName())
@@ -75,7 +75,7 @@ public class GeneratorTool {
         GlobalConfig globalConfig = new GlobalConfig();
         //生成代码输出路径
         globalConfig.setOutputDir("F:"+ File.separator+ "codegen")
-                .setAuthor("tff")
+                .setAuthor("isharefox")
                 .setOpen(true)  //生成后打开文件夹
                 .setFileOverride(true);
         return globalConfig;
@@ -86,8 +86,8 @@ public class GeneratorTool {
      */
     private PackageConfig packageConfig() {
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.tff")
-                     .setModuleName("account");
+        packageConfig.setParent("com.isharefox")
+                     .setModuleName("share");
         return packageConfig;
     }
 
@@ -96,7 +96,9 @@ public class GeneratorTool {
      */
     private StrategyConfig strategyConfig() {
         StrategyConfig strategyConfig = new StrategyConfig();
-        strategyConfig.setInclude("account")   //表名
+        strategyConfig.setInclude(new String[]{
+                "share_resource",
+                "share_resource_flow"})   //表名
                 .setTablePrefix("t_")   //去掉前缀
                 .setNaming(NamingStrategy.underline_to_camel)
                 .setColumnNaming(NamingStrategy.underline_to_camel)

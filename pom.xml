@@ -7,9 +7,9 @@
         <module>common</module>
         <module>web</module>
         <module>repo</module>
-        <module>service</module>
         <module>account</module>
         <module>pay</module>
+        <module>share</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -29,7 +29,6 @@
         <modelmapper.version>2.3.0</modelmapper.version>
         <guava.version>30.0-jre</guava.version>
         <mybatis-plus.version>3.4.0</mybatis-plus.version>
-        <freemarker.version>2.3.30</freemarker.version>
         <com.alipay.sdk.version>4.10.167.ALL</com.alipay.sdk.version>
         <zxing.version>3.3.3</zxing.version>
     </properties>
@@ -85,6 +84,11 @@
             <dependency>
                 <groupId>com.isharefox</groupId>
                 <artifactId>account</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.isharefox</groupId>
+                <artifactId>share</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>

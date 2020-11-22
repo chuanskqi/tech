@@ -2,9 +2,9 @@ package com.isharefox.pay;
 
 import com.isharefox.common.qrcode.QrcodeUtils;
 import com.isharefox.property.AssetLoader;
-import com.isharefox.service.pay.PayService;
-import com.isharefox.service.pay.model.TradePrecreateReqeust;
-import com.isharefox.service.pay.model.TradePrecreateResponse;
+import com.isharefox.pay.service.PayService;
+import com.isharefox.pay.service.model.TradePrecreateReqeust;
+import com.isharefox.pay.service.model.TradePrecreateResponse;
 import com.isharefox.view.Constant;
 import com.isharefox.view.PageFactory;
 import com.isharefox.view.QrPage;

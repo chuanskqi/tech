@@ -1,7 +1,7 @@
 package com.isharefox;
 
 import com.google.gson.Gson;
-import com.isharefox.service.account.IAccountService;
+import com.isharefox.account.service.IAccountService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

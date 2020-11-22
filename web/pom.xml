@@ -45,7 +45,10 @@
             <groupId>com.isharefox</groupId>
             <artifactId>account</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.isharefox</groupId>
+            <artifactId>share</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.isharefox</groupId>
             <artifactId>pay</artifactId>

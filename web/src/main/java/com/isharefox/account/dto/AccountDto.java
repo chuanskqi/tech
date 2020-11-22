@@ -16,17 +16,34 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 public class AccountDto {
+    /**
+     * 邮箱
+     */
     @NotBlank
-    private String id;
-    private String name;
-    @Email(message = "Invalid email")
+    @Email
     private String email;
-    private boolean confirmedAndActive;
-    @NotNull
-    private LocalDateTime memberSince;
-    private boolean support;
+
+    /**
+     * 昵称
+     */
+    @NotBlank
+    private String name;
+
+    /**
+     * 电话号码
+     */
     @PhoneNumber
+    @NotBlank
     private String phoneNumber;
-    @NotEmpty
+
+    /**
+     * 用户状态控制
+     */
+    private String status;
+
     private String photoUrl;
+
+    private LocalDateTime createTime;
+
+    private LocalDateTime updateTime;
 }
