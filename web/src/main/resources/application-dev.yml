@@ -8,13 +8,13 @@ spring:
     username: root
     password: admin@tff
 
+
+
 logging:
   group:
     fox: com.isharefox
   level:
     fox: info
-
-
 
 alipay:
   serverUrl: https://openapi.alipaydev.com/gateway.do
